@@ -13866,11 +13866,12 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <p>Decision Tree Classifier:
-In a decision tree, each branch represents a possible decision, occurrence or reaction. One example of using Decision tree classifiers is to recommend apps in stores for different classes of people depending on other variables.</p>
+In a decision tree, each branch represents a possible decision, occurrence or reaction. One real world application of using Decision tree classifiers is to recommend apps in stores for different classes of people depending on other variables. The cool thing about decision tree is their ability to run fast, and can handle both categories as well as numeric data.
+The bad thing about Decision tree classifiers is that it tends to overfit quite often. this model might be good for this problem because what we're trying to answer is a basic binary question of yes/no.</p>
 <p>Adaboost:
-Boosted algorithms are used where we have plenty of data to make a prediction. And we seek exceptionally high predictive power. It is used to for reducing bias and variance in supervised learning. It combines multiple weak predictors to a build strong predictor. One example of using Adaboost is for facial recognition.</p>
+Boosted algorithms are used where we have plenty of data to make a prediction. One example of using Adaboost is for facial recognition. an advantage of adaboost is its exceptionally high predictive power. The thing I feel like I should consider a weakness of adaboost is that it increases the overall complexity of the system. which is why we need to have relatively simple learners. Adaboost is a good candidate for this question simply because it's runs very quickly, and also because it's very accurate.</p>
 <p>SVM:
-The aim of using SVM is to correctly classify unseen data. SVMs have a number of applications in several fields. One example of using SVM algorithms is in image classification.</p>
+The aim of using SVM is to correctly classify unseen data. One real world example of using SVM algorithms is in the medical field where we can use it to classify diseases such as cancer. A big plus for SVM model is its ability to scale really well in higher dimension data. A really bad problem about it is that it doesn't work very well in a "noisy" dataset, where they tend to overfit when noise is present. It also takes a very long time to classify larger datasets. SVM's capability to classify data that isn't linear would make it a good candidate to answer this question.</p>
 
 </div>
 </div>
@@ -14148,7 +14149,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>Adaboost works by combining weak learners into a bigger classifier with much higher performance AKA strong learner.</p>
+<p>Adaboost works by combining weak learners into a bigger classifier with much higher performance AKA strong learner. We can simplify the way it works by taking this example: we want to figure out whether a person is willing to buy a product or not. We know of multiple features such as whether they live in the city or a village, their occupation, their age, their gender, and whether they have children or not. then we will start classifying data, and punishing every wrong classification by increasing the weight of that misclassified data, and then back to classifying and reweighting data, then after we finish, we would combine the weights and let them vote, which would give us a great and precise answer.</p>
 
 </div>
 </div>
@@ -16929,6 +16930,7 @@ Final F-score on the testing data: 0.7316
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
+<p>I see that I have gotten 4 features here that were discussed in question 6 out of the 5. 4 of the features that I have discussed earlier are confirmed to have effects on the person's income. I assumed that occupation would take a bigger role than it really does but after really considering it, I find the capital loss is a much bigger reason for people to not donating as they have lower income in general.</p>
 
 </div>
 </div>
